@@ -4,7 +4,7 @@ public class Main {
         user.setUsername("Laura");
         user.setPlan("Premium");
 
-        DocumentJob job = new DocumentJob("archivo.txt", "PDF", null, true, user);
+        DocumentJob job = new DocumentJob("archivo.txt", "PDF", true, user);
 
         DocumentProcessor processor = new DocumentProcessor();
         processor.addObserver(new SlackNotifier());
